@@ -1,0 +1,17 @@
+ //
+//  PrefixHeader.pch
+//  JHInke
+//
+//  Created by 佳豪 on 2016/12/20.
+//  Copyright © 2016年 佳豪. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "JHMacro.h"
+#import "APIConfig.h"
+#import "YYKit.h"
+
+#endif /* PrefixHeader_pch */
