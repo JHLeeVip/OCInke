@@ -25,7 +25,6 @@ typedef void (^HttpUploadProgressBlock)(CGFloat progress);
  *  @param success 请求成功 返回NSDictionary或NSArray
  *  @param failure 请求失败 返回NSError
  */
-
 + (void)getWithPath:(NSString *)path
              params:(NSDictionary *)params
             success:(HttpSuccessBlock)success
@@ -39,7 +38,6 @@ typedef void (^HttpUploadProgressBlock)(CGFloat progress);
  *  @param success 请求成功 返回NSDictionary或NSArray
  *  @param failure 请求失败 返回NSError
  */
-
 + (void)postWithPath:(NSString *)path
              params:(NSDictionary *)params
             success:(HttpSuccessBlock)success
@@ -53,7 +51,6 @@ typedef void (^HttpUploadProgressBlock)(CGFloat progress);
  *  @param failure  下载失败
  *  @param progress 下载进度
  */
-
 + (void)downloadWithPath:(NSString *)path
                  success:(HttpSuccessBlock)success
                  failure:(HttpFailureBlock)failure
@@ -63,14 +60,13 @@ typedef void (^HttpUploadProgressBlock)(CGFloat progress);
  *  上传图片
  *
  *  @param path     url地址
- *  @param image    UIImage对象
- *  @param thumbName    imagekey
  *  @param params  上传参数
+ *  @param image    UIImage对象
+ *  @param imagekey    imagekey
  *  @param success  上传成功
  *  @param failure  上传失败
  *  @param progress 上传进度
  */
-
 + (void)uploadImageWithPath:(NSString *)path
                      params:(NSDictionary *)params
                   thumbName:(NSString *)imagekey

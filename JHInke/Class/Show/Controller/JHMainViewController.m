@@ -25,14 +25,14 @@
 @implementation JHMainViewController
 #pragma mark =====================================
 #pragma mark -懒加载
--(NSArray *)dataList
+- (NSArray *)dataList
 {
     if (!_dataList) {
         _dataList = @[@"关注",@"热门",@"附近",@"才艺",@"好声音"];
     }
     return _dataList;
 }
--(JHMainTopView *)topTitleView
+- (JHMainTopView *)topTitleView
 {
     if (!_topTitleView) {
         _topTitleView = [[[NSBundle mainBundle] loadNibNamed:@"JHMainTopView" owner:self options:nil] lastObject];
@@ -46,20 +46,18 @@
     [super viewDidLoad];
     //设置UI
     [self setUpUI];
-    
 }
--(void)setUpUI{
+- (void)setUpUI{
     //设置导航栏
     [self setupNav];
     //添加子控制器
     [self setupChildViewControllers];
     [self setupTitle];
-//    //默认显示"热门"控制器,直接先调用代理方法
+//    默认显示"热门"控制器,直接先调用代理方法
     self.contentScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
     [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
-    
 }
--(void)setupChildViewControllers{
+- (void)setupChildViewControllers{
     NSArray *arr = @[@"JHFocusViewController",@"JHHotViewController",@"JHNearViewController",@"JHFocusViewController",@"JHFocusViewController"];
     for (NSInteger i = 0; i < arr.count; i++) {
         NSString *VCName = arr[i];
@@ -69,14 +67,14 @@
     }
 //    self.viewControllers = arr;//UIViewController没有这个属性
 }
--(void)setupNav{
+- (void)setupNav{
     //设置导航栏item
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:nil action:nil];
     //添加自定义标题
     self.navigationItem.titleView = self.topTitleView;
 }
--(void)setupTitle{
+- (void)setupTitle{
     CGFloat labelW = 100;
     CGFloat labelY = 0;
     CGFloat labelH = self.topTitleView.titleScrollView.bounds.size.height;
@@ -101,7 +99,7 @@
 
 #pragma mark =====================================
 #pragma mark -按钮点击相关
--(void)labelCilik:(UITapGestureRecognizer *)tap{
+- (void)labelCilik:(UITapGestureRecognizer *)tap{
     //取出被点击label的索引
     NSInteger index = tap.view.tag;
     //让底部的内容滚动到相应位置
@@ -113,7 +111,7 @@
 #pragma mark =====================================
 #pragma mark -UIScrollViewDelegate
 /** scrollView滚动时持续监听的方法 */
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     //为整型浮点型数字的操作铺垫
     CGFloat scale = scrollView.contentOffset.x / scrollView.bounds.size.width;
     //内容已经滑动到了左边界或右边界,不改变Title的scale
@@ -140,11 +138,11 @@
 }
 /** 手指松开scrollView后,scrollView停止减速完毕就会调用这个方法 */
 //继续调取动画结束方法
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     [self scrollViewDidEndScrollingAnimation:scrollView];
 }
 /** 结束了滚动动画以后就会调用这个方法 */
--(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     CGFloat width = SCREEN_WIDTH;
     CGFloat height = SCREEN_HEIGHT - 64;
     CGFloat offsetX = scrollView.contentOffset.x;
@@ -162,7 +160,8 @@
     //取出最大偏移值
     CGFloat maxTitleOffsetX = self.topTitleView.titleScrollView.contentSize.width - self.topTitleView.titleScrollView.bounds.size.width;
     if (titleOffset.x > maxTitleOffsetX) titleOffset.x = maxTitleOffsetX;
-    [self.topTitleView.titleScrollView setContentOffset:titleOffset animated:YES];//执行滑动
+    //执行滑动,以此为中心思考偏移
+    [self.topTitleView.titleScrollView setContentOffset:titleOffset animated:YES];
     
     //让其他title回到初始状态
     for (JHScrollTitle * otherLabel in self.topTitleView.titleScrollView.subviews) {

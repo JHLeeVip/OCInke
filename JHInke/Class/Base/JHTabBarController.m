@@ -30,7 +30,6 @@
     return _jhTabBar;
 }
 
-
 #pragma mark =====================================
 #pragma mark -控制器构造相关
 - (void)viewDidLoad {
