@@ -14,6 +14,12 @@
 		181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D511E616B5E004DB547 /* JHHotLiveCell.m */; };
 		181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */; };
 		181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D561E617525004DB547 /* MJExtensionConfig.m */; };
+		181F8D601E61A076004DB547 /* JHTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D5E1E61A076004DB547 /* JHTalentViewController.m */; };
+		181F8D611E61A076004DB547 /* JHTalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D5F1E61A076004DB547 /* JHTalentViewController.xib */; };
+		181F8D651E61A0AB004DB547 /* JHVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D631E61A0AB004DB547 /* JHVideoViewController.m */; };
+		181F8D661E61A0AB004DB547 /* JHVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D641E61A0AB004DB547 /* JHVideoViewController.xib */; };
+		181F8D6A1E61A0DB004DB547 /* JHVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D681E61A0DB004DB547 /* JHVoiceViewController.m */; };
+		181F8D6B1E61A0DB004DB547 /* JHVoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D691E61A0DB004DB547 /* JHVoiceViewController.xib */; };
 		18278ABE1E4FFB0F00199B02 /* JHMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */; };
 		18278AC01E4FFB4300199B02 /* JHMainTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */; };
 		18278AC41E502A7100199B02 /* JHBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18278AC31E502A7100199B02 /* JHBaseHandler.m */; };
@@ -67,6 +73,15 @@
 		181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHotLiveCell.xib; sourceTree = "<group>"; };
 		181F8D551E617525004DB547 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		181F8D561E617525004DB547 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		181F8D5D1E61A076004DB547 /* JHTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTalentViewController.h; sourceTree = "<group>"; };
+		181F8D5E1E61A076004DB547 /* JHTalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTalentViewController.m; sourceTree = "<group>"; };
+		181F8D5F1E61A076004DB547 /* JHTalentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHTalentViewController.xib; sourceTree = "<group>"; };
+		181F8D621E61A0AB004DB547 /* JHVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHVideoViewController.h; sourceTree = "<group>"; };
+		181F8D631E61A0AB004DB547 /* JHVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHVideoViewController.m; sourceTree = "<group>"; };
+		181F8D641E61A0AB004DB547 /* JHVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHVideoViewController.xib; sourceTree = "<group>"; };
+		181F8D671E61A0DB004DB547 /* JHVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHVoiceViewController.h; sourceTree = "<group>"; };
+		181F8D681E61A0DB004DB547 /* JHVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHVoiceViewController.m; sourceTree = "<group>"; };
+		181F8D691E61A0DB004DB547 /* JHVoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHVoiceViewController.xib; sourceTree = "<group>"; };
 		18278ABC1E4FFB0F00199B02 /* JHMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainTopView.h; sourceTree = "<group>"; };
 		18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainTopView.m; sourceTree = "<group>"; };
 		18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHMainTopView.xib; sourceTree = "<group>"; };
@@ -427,6 +442,15 @@
 				18ED58881E44D3EC00145D2C /* JHNearViewController.h */,
 				18ED58891E44D3EC00145D2C /* JHNearViewController.m */,
 				18ED588A1E44D3EC00145D2C /* JHNearViewController.xib */,
+				181F8D621E61A0AB004DB547 /* JHVideoViewController.h */,
+				181F8D631E61A0AB004DB547 /* JHVideoViewController.m */,
+				181F8D641E61A0AB004DB547 /* JHVideoViewController.xib */,
+				181F8D5D1E61A076004DB547 /* JHTalentViewController.h */,
+				181F8D5E1E61A076004DB547 /* JHTalentViewController.m */,
+				181F8D5F1E61A076004DB547 /* JHTalentViewController.xib */,
+				181F8D671E61A0DB004DB547 /* JHVoiceViewController.h */,
+				181F8D681E61A0DB004DB547 /* JHVoiceViewController.m */,
+				181F8D691E61A0DB004DB547 /* JHVoiceViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -575,7 +599,10 @@
 				188788031E0925FE00E600A6 /* LaunchScreen.storyboard in Resources */,
 				18EBA2BA1E438D5900993B91 /* JHMeViewController.xib in Resources */,
 				181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */,
+				181F8D661E61A0AB004DB547 /* JHVideoViewController.xib in Resources */,
+				181F8D6B1E61A0DB004DB547 /* JHVoiceViewController.xib in Resources */,
 				188788001E0925FE00E600A6 /* Assets.xcassets in Resources */,
+				181F8D611E61A076004DB547 /* JHTalentViewController.xib in Resources */,
 				18ED587D1E44A56E00145D2C /* JHLaunchViewController.xib in Resources */,
 				188787FE1E0925FE00E600A6 /* Main.storyboard in Resources */,
 				181F8D461E61596D004DB547 /* JHHotViewController.xib in Resources */,
@@ -651,6 +678,7 @@
 				188788281E0927CA00E600A6 /* AppDelegate.m in Sources */,
 				18278AD21E50344400199B02 /* HttpTool.m in Sources */,
 				18EBA2AA1E43763000993B91 /* JHTabBar.m in Sources */,
+				181F8D601E61A076004DB547 /* JHTalentViewController.m in Sources */,
 				181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */,
 				181F8D4F1E616A1D004DB547 /* JHCreator.m in Sources */,
 				181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */,
@@ -664,8 +692,10 @@
 				18ED588B1E44D3EC00145D2C /* JHNearViewController.m in Sources */,
 				181F8D4C1E6169F8004DB547 /* JHLive.m in Sources */,
 				18278AC71E502D3700199B02 /* JHLiveHandler.m in Sources */,
+				181F8D651E61A0AB004DB547 /* JHVideoViewController.m in Sources */,
 				18EBA2B41E438D4D00993B91 /* JHMainViewController.m in Sources */,
 				18EBA2AD1E438B3900993B91 /* JHBaseNavigationController.m in Sources */,
+				181F8D6A1E61A0DB004DB547 /* JHVoiceViewController.m in Sources */,
 				18EBA2B01E438D2500993B91 /* JHBaseViewController.m in Sources */,
 				18ED588F1E457ACB00145D2C /* JHScrollTitle.m in Sources */,
 				18278ABE1E4FFB0F00199B02 /* JHMainTopView.m in Sources */,

@@ -10,6 +10,9 @@
 #import "JHFocusViewController.h"
 #import "JHHotViewController.h"
 #import "JHNearViewController.h"
+#import "JHVideoViewController.h"
+#import "JHTalentViewController.h"
+#import "JHVoiceViewController.h"
 #import "JHScrollTitle.h"
 #import "JHMainTopView.h"
 
@@ -28,7 +31,7 @@
 - (NSArray *)dataList
 {
     if (!_dataList) {
-        _dataList = @[@"关注",@"热门",@"附近",@"才艺",@"好声音"];
+        _dataList = @[@"关注",@"热门",@"附近",@"视频",@"才艺",@"好声音"];
     }
     return _dataList;
 }
@@ -59,7 +62,7 @@
     self.contentScrollView.autoresizesSubviews = NO;//不设置会导致tableView的cell位置有问题
 }
 - (void)setupChildViewControllers{
-    NSArray *arr = @[@"JHFocusViewController",@"JHHotViewController",@"JHNearViewController",@"JHFocusViewController",@"JHFocusViewController"];
+    NSArray *arr = @[@"JHFocusViewController",@"JHHotViewController",@"JHNearViewController",@"JHVideoViewController",@"JHTalentViewController",@"JHVoiceViewController"];
     for (NSInteger i = 0; i < arr.count; i++) {
         NSString *VCName = arr[i];
         UIViewController *VC = [[NSClassFromString(VCName) alloc] init];
@@ -125,7 +128,7 @@
     
     //获得需要操作的右边的title
     NSInteger rightIndex = leftIndex + 1;
-    //这是坑!!!rightIndex在内容滑动到最后的时候一瞬间能到5,超出subViews数组边界!
+    //这是坑!!!rightIndex在内容滑动到最后的时候一瞬间能到6,超出subViews数组边界!
     JHScrollTitle *rightLabel = (rightIndex == self.topTitleView.titleScrollView.subviews.count)?nil:self.topTitleView.titleScrollView.subviews[rightIndex];
     
     //右边title变化比例

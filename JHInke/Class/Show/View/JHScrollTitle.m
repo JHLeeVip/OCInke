@@ -30,6 +30,5 @@
     //字体大小渐变
     CGFloat transformScale = 1 + scale * 0.2;//缩放比例[1,1.2]
     self.transform = CGAffineTransformMakeScale(transformScale, transformScale);
-    
 }
 @end

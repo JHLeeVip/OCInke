@@ -22,7 +22,7 @@
         //如果返回信息正确,解析数据,直接回传模型数组
         NSArray * lives = [JHLive mj_objectArrayWithKeyValuesArray:json[@"lives"]];
         success(lives);
-        JHLog(@"%@",UTF8TOCHINESEWITH(json));
+//        JHLog(@"%@",UTF8TOCHINESEWITH(json));
         
     } failure:^(NSError *error) {
         failed(error);

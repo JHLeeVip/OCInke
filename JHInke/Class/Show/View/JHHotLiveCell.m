@@ -31,14 +31,32 @@
 
 - (void)setLive:(JHLive *)live{
     _live = live;
-    [self.headImgV downloadImage:live.creator.portrait placeholder:@"login_ico_weibo"];
+
     self.nameLabel.text = live.creator.nick;
     NSString * cityStr = nil;
     // = 的优先级大于三目运算符
     ![live.city isEqualToString:@""] ? (cityStr = [NSString stringWithFormat:@"%@>",live.city]) : (cityStr = @"可能在火星>");
     self.cityLabel.text = cityStr;
     self.onlineLabel.text = [@(live.onlineUsers) stringValue];
-    [self.portraitImgV downloadImage:live.creator.portrait placeholder:@"login_ico_weibo"];
+
+    //不同的网络图片要做判断
+    if ([live.creator.portrait isEqualToString:@"AppIcon60x60@3x的副本"]) {
+        
+        self.headImgV.image = [UIImage imageNamed:@"AppIcon60x60@3x的副本"];
+        self.portraitImgV.image = [UIImage imageNamed:@"AppIcon60x60@3x的副本"];
+        
+    } else {
+        
+        NSString *imageUrl;
+        if ([live.creator.portrait hasPrefix:@"http"]) {
+            imageUrl = live.creator.portrait;
+        }else{
+            imageUrl = [NSString stringWithFormat:@"%@%@",IMAGE_HOST,live.creator.portrait];
+        }
+        
+        [self.headImgV downloadImage:imageUrl placeholder:@"default_room"];
+        [self.portraitImgV downloadImage:imageUrl placeholder:@"default_room"];
+    }
 }
 
 @end
