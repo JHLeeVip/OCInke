@@ -9,9 +9,21 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#pragma mark =====================================
+#pragma mark -Object-C Only
+// 如果是OC源代码文件
+#ifdef __OBJC__
+
+
 #import "Masonry.h"
 #import "JHMacro.h"
 #import "APIConfig.h"
 #import "YYKit.h"
+
+
+#pragma mark =====================================
+#pragma mark -Object-C Only
+#endif
+
 
 #endif /* PrefixHeader_pch */

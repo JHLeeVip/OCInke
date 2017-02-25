@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181F8D451E61596D004DB547 /* JHHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D431E61596D004DB547 /* JHHotViewController.m */; };
+		181F8D461E61596D004DB547 /* JHHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D441E61596D004DB547 /* JHHotViewController.xib */; };
+		181F8D4C1E6169F8004DB547 /* JHLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D4B1E6169F8004DB547 /* JHLive.m */; };
+		181F8D4F1E616A1D004DB547 /* JHCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D4E1E616A1D004DB547 /* JHCreator.m */; };
+		181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D511E616B5E004DB547 /* JHHotLiveCell.m */; };
+		181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */; };
+		181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D561E617525004DB547 /* MJExtensionConfig.m */; };
 		18278ABE1E4FFB0F00199B02 /* JHMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */; };
 		18278AC01E4FFB4300199B02 /* JHMainTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */; };
 		18278AC41E502A7100199B02 /* JHBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18278AC31E502A7100199B02 /* JHBaseHandler.m */; };
@@ -31,8 +38,6 @@
 		18ED587D1E44A56E00145D2C /* JHLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED587B1E44A56E00145D2C /* JHLaunchViewController.xib */; };
 		18ED58811E44D3D300145D2C /* JHFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED587F1E44D3D300145D2C /* JHFocusViewController.m */; };
 		18ED58821E44D3D300145D2C /* JHFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED58801E44D3D300145D2C /* JHFocusViewController.xib */; };
-		18ED58861E44D3E000145D2C /* JHHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED58841E44D3E000145D2C /* JHHotViewController.m */; };
-		18ED58871E44D3E000145D2C /* JHHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED58851E44D3E000145D2C /* JHHotViewController.xib */; };
 		18ED588B1E44D3EC00145D2C /* JHNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED58891E44D3EC00145D2C /* JHNearViewController.m */; };
 		18ED588C1E44D3EC00145D2C /* JHNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED588A1E44D3EC00145D2C /* JHNearViewController.xib */; };
 		18ED588F1E457ACB00145D2C /* JHScrollTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED588E1E457ACB00145D2C /* JHScrollTitle.m */; };
@@ -50,6 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181F8D421E61596D004DB547 /* JHHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHotViewController.h; sourceTree = "<group>"; };
+		181F8D431E61596D004DB547 /* JHHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHotViewController.m; sourceTree = "<group>"; };
+		181F8D441E61596D004DB547 /* JHHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHotViewController.xib; sourceTree = "<group>"; };
+		181F8D4A1E6169F8004DB547 /* JHLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLive.h; sourceTree = "<group>"; };
+		181F8D4B1E6169F8004DB547 /* JHLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLive.m; sourceTree = "<group>"; };
+		181F8D4D1E616A1D004DB547 /* JHCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCreator.h; sourceTree = "<group>"; };
+		181F8D4E1E616A1D004DB547 /* JHCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCreator.m; sourceTree = "<group>"; };
+		181F8D501E616B5E004DB547 /* JHHotLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHotLiveCell.h; sourceTree = "<group>"; };
+		181F8D511E616B5E004DB547 /* JHHotLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHotLiveCell.m; sourceTree = "<group>"; };
+		181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHotLiveCell.xib; sourceTree = "<group>"; };
+		181F8D551E617525004DB547 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		181F8D561E617525004DB547 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		18278ABC1E4FFB0F00199B02 /* JHMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainTopView.h; sourceTree = "<group>"; };
 		18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainTopView.m; sourceTree = "<group>"; };
 		18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHMainTopView.xib; sourceTree = "<group>"; };
@@ -95,9 +112,6 @@
 		18ED587E1E44D3D300145D2C /* JHFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFocusViewController.h; sourceTree = "<group>"; };
 		18ED587F1E44D3D300145D2C /* JHFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFocusViewController.m; sourceTree = "<group>"; };
 		18ED58801E44D3D300145D2C /* JHFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHFocusViewController.xib; sourceTree = "<group>"; };
-		18ED58831E44D3E000145D2C /* JHHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHotViewController.h; sourceTree = "<group>"; };
-		18ED58841E44D3E000145D2C /* JHHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHotViewController.m; sourceTree = "<group>"; };
-		18ED58851E44D3E000145D2C /* JHHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHotViewController.xib; sourceTree = "<group>"; };
 		18ED58881E44D3EC00145D2C /* JHNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNearViewController.h; sourceTree = "<group>"; };
 		18ED58891E44D3EC00145D2C /* JHNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNearViewController.m; sourceTree = "<group>"; };
 		18ED588A1E44D3EC00145D2C /* JHNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHNearViewController.xib; sourceTree = "<group>"; };
@@ -228,6 +242,8 @@
 		1887880E1E0927CA00E600A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				181F8D551E617525004DB547 /* MJExtensionConfig.h */,
+				181F8D561E617525004DB547 /* MJExtensionConfig.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -402,12 +418,12 @@
 				18ED58791E44A56E00145D2C /* JHLaunchViewController.h */,
 				18ED587A1E44A56E00145D2C /* JHLaunchViewController.m */,
 				18ED587B1E44A56E00145D2C /* JHLaunchViewController.xib */,
+				181F8D421E61596D004DB547 /* JHHotViewController.h */,
+				181F8D431E61596D004DB547 /* JHHotViewController.m */,
+				181F8D441E61596D004DB547 /* JHHotViewController.xib */,
 				18ED587E1E44D3D300145D2C /* JHFocusViewController.h */,
 				18ED587F1E44D3D300145D2C /* JHFocusViewController.m */,
 				18ED58801E44D3D300145D2C /* JHFocusViewController.xib */,
-				18ED58831E44D3E000145D2C /* JHHotViewController.h */,
-				18ED58841E44D3E000145D2C /* JHHotViewController.m */,
-				18ED58851E44D3E000145D2C /* JHHotViewController.xib */,
 				18ED58881E44D3EC00145D2C /* JHNearViewController.h */,
 				18ED58891E44D3EC00145D2C /* JHNearViewController.m */,
 				18ED588A1E44D3EC00145D2C /* JHNearViewController.xib */,
@@ -427,6 +443,10 @@
 		188788261E0927CA00E600A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				181F8D4A1E6169F8004DB547 /* JHLive.h */,
+				181F8D4B1E6169F8004DB547 /* JHLive.m */,
+				181F8D4D1E616A1D004DB547 /* JHCreator.h */,
+				181F8D4E1E616A1D004DB547 /* JHCreator.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +459,9 @@
 				18278ABC1E4FFB0F00199B02 /* JHMainTopView.h */,
 				18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */,
 				18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */,
+				181F8D501E616B5E004DB547 /* JHHotLiveCell.h */,
+				181F8D511E616B5E004DB547 /* JHHotLiveCell.m */,
+				181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,10 +574,11 @@
 				18ED588C1E44D3EC00145D2C /* JHNearViewController.xib in Resources */,
 				188788031E0925FE00E600A6 /* LaunchScreen.storyboard in Resources */,
 				18EBA2BA1E438D5900993B91 /* JHMeViewController.xib in Resources */,
+				181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */,
 				188788001E0925FE00E600A6 /* Assets.xcassets in Resources */,
 				18ED587D1E44A56E00145D2C /* JHLaunchViewController.xib in Resources */,
-				18ED58871E44D3E000145D2C /* JHHotViewController.xib in Resources */,
 				188787FE1E0925FE00E600A6 /* Main.storyboard in Resources */,
+				181F8D461E61596D004DB547 /* JHHotViewController.xib in Resources */,
 				18278AC01E4FFB4300199B02 /* JHMainTopView.xib in Resources */,
 				18EBA2B51E438D4D00993B91 /* JHMainViewController.xib in Resources */,
 				18ED58821E44D3D300145D2C /* JHFocusViewController.xib in Resources */,
@@ -627,14 +651,18 @@
 				188788281E0927CA00E600A6 /* AppDelegate.m in Sources */,
 				18278AD21E50344400199B02 /* HttpTool.m in Sources */,
 				18EBA2AA1E43763000993B91 /* JHTabBar.m in Sources */,
+				181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */,
+				181F8D4F1E616A1D004DB547 /* JHCreator.m in Sources */,
+				181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */,
+				181F8D451E61596D004DB547 /* JHHotViewController.m in Sources */,
 				18278AC41E502A7100199B02 /* JHBaseHandler.m in Sources */,
 				18EBA2B91E438D5900993B91 /* JHMeViewController.m in Sources */,
 				18EBA2A71E43761F00993B91 /* JHTabBarController.m in Sources */,
-				18ED58861E44D3E000145D2C /* JHHotViewController.m in Sources */,
 				18278AD31E50344400199B02 /* UIImageView+SDWebImage.m in Sources */,
 				18ED58811E44D3D300145D2C /* JHFocusViewController.m in Sources */,
 				188787F51E0925FE00E600A6 /* main.m in Sources */,
 				18ED588B1E44D3EC00145D2C /* JHNearViewController.m in Sources */,
+				181F8D4C1E6169F8004DB547 /* JHLive.m in Sources */,
 				18278AC71E502D3700199B02 /* JHLiveHandler.m in Sources */,
 				18EBA2B41E438D4D00993B91 /* JHMainViewController.m in Sources */,
 				18EBA2AD1E438B3900993B91 /* JHBaseNavigationController.m in Sources */,
@@ -854,6 +882,7 @@
 				18B3B13B1E56D7FA00BD575A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

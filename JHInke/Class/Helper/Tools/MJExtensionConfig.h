@@ -1,13 +1,13 @@
 //
-//  JHHotViewController.h
+//  MJExtensionConfig.h
 //  JHInke
 //
 //  Created by 佳豪 on 2017/2/25.
 //  Copyright © 2017年 佳豪. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface JHHotViewController : UITableViewController
+@interface MJExtensionConfig : NSObject
 
 @end

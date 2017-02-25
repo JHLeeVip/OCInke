@@ -17,25 +17,21 @@ static NSString * kBaseUrl = SERVER_HOST;
 
 @end
 
-@implementation AFHttpClient
+@implementation AFHttpClient : AFHTTPSessionManager
 
-+ (instancetype)sharedClient {
-    
++ (instancetype)sharedClient{
     static AFHttpClient * client = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
         NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        
-        client = [[AFHttpClient alloc] initWithBaseURL:[NSURL URLWithString:kBaseUrl] sessionConfiguration:configuration];
-        //接收参数类型
-        client.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html", @"text/json", @"text/javascript",@"text/plain",@"image/gif", nil];
-        //设置超时时间
-        client.requestSerializer.timeoutInterval = 15;
-        //安全策略
+        client = [[AFHttpClient alloc] initWithSessionConfiguration:configuration];
+        //设置接收参数类型
+        client.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/javascript", @"text/plain", @"image/gif", nil];
+        //设置请求超时时间
+        client.requestSerializer.timeoutInterval = 30;
+        //设置安全策略
         client.securityPolicy = [AFSecurityPolicy defaultPolicy];
     });
-    
     return client;
 }
 
@@ -59,7 +55,6 @@ static NSString * kBaseUrl = SERVER_HOST;
         failure(error);
         
     }];
-
 }
 
 + (void)postWithPath:(NSString *)path
@@ -78,7 +73,6 @@ static NSString * kBaseUrl = SERVER_HOST;
         failure(error);
         
     }];
-    
 }
 
 + (void)downloadWithPath:(NSString *)path
@@ -117,7 +111,6 @@ static NSString * kBaseUrl = SERVER_HOST;
     }];
     
     [downloadTask resume];
-    
 }
 
 + (void)uploadImageWithPath:(NSString *)path

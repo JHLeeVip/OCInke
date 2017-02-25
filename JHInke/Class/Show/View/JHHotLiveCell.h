@@ -1,5 +1,5 @@
 //
-//  JHHotViewController.h
+//  JHHotLiveCell.h
 //  JHInke
 //
 //  Created by 佳豪 on 2017/2/25.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class JHLive;
+@interface JHHotLiveCell : UITableViewCell
 
-@interface JHHotViewController : UITableViewController
+/** 模型属性 */
+@property(nonatomic,strong) JHLive *live;
 
 @end

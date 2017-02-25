@@ -11,7 +11,7 @@
 /** 处理完成事件 */
 typedef void(^CompleteBlock)();
 
-/** 成功,返回数据 */
+/** 成功,返回数据模型 */
 typedef void(^SuccessBlock)(id obj);
 
 /** 失败,返回错误信息 */

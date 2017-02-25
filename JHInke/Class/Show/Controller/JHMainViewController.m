@@ -56,6 +56,7 @@
 //    默认显示"热门"控制器,直接先调用代理方法
     self.contentScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
     [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
+    self.contentScrollView.autoresizesSubviews = NO;//不设置会导致tableView的cell位置有问题
 }
 - (void)setupChildViewControllers{
     NSArray *arr = @[@"JHFocusViewController",@"JHHotViewController",@"JHNearViewController",@"JHFocusViewController",@"JHFocusViewController"];
