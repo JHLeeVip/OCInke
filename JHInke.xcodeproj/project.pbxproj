@@ -11,8 +11,8 @@
 		181F8D461E61596D004DB547 /* JHHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D441E61596D004DB547 /* JHHotViewController.xib */; };
 		181F8D4C1E6169F8004DB547 /* JHLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D4B1E6169F8004DB547 /* JHLive.m */; };
 		181F8D4F1E616A1D004DB547 /* JHCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D4E1E616A1D004DB547 /* JHCreator.m */; };
-		181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D511E616B5E004DB547 /* JHHotLiveCell.m */; };
-		181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */; };
+		181F8D531E616B5E004DB547 /* JHLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D511E616B5E004DB547 /* JHLiveCell.m */; };
+		181F8D541E616B5E004DB547 /* JHLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D521E616B5E004DB547 /* JHLiveCell.xib */; };
 		181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D561E617525004DB547 /* MJExtensionConfig.m */; };
 		181F8D601E61A076004DB547 /* JHTalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F8D5E1E61A076004DB547 /* JHTalentViewController.m */; };
 		181F8D611E61A076004DB547 /* JHTalentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181F8D5F1E61A076004DB547 /* JHTalentViewController.xib */; };
@@ -68,9 +68,9 @@
 		181F8D4B1E6169F8004DB547 /* JHLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLive.m; sourceTree = "<group>"; };
 		181F8D4D1E616A1D004DB547 /* JHCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCreator.h; sourceTree = "<group>"; };
 		181F8D4E1E616A1D004DB547 /* JHCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCreator.m; sourceTree = "<group>"; };
-		181F8D501E616B5E004DB547 /* JHHotLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHotLiveCell.h; sourceTree = "<group>"; };
-		181F8D511E616B5E004DB547 /* JHHotLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHotLiveCell.m; sourceTree = "<group>"; };
-		181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHHotLiveCell.xib; sourceTree = "<group>"; };
+		181F8D501E616B5E004DB547 /* JHLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLiveCell.h; sourceTree = "<group>"; };
+		181F8D511E616B5E004DB547 /* JHLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLiveCell.m; sourceTree = "<group>"; };
+		181F8D521E616B5E004DB547 /* JHLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHLiveCell.xib; sourceTree = "<group>"; };
 		181F8D551E617525004DB547 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		181F8D561E617525004DB547 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		181F8D5D1E61A076004DB547 /* JHTalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTalentViewController.h; sourceTree = "<group>"; };
@@ -483,9 +483,9 @@
 				18278ABC1E4FFB0F00199B02 /* JHMainTopView.h */,
 				18278ABD1E4FFB0F00199B02 /* JHMainTopView.m */,
 				18278ABF1E4FFB4300199B02 /* JHMainTopView.xib */,
-				181F8D501E616B5E004DB547 /* JHHotLiveCell.h */,
-				181F8D511E616B5E004DB547 /* JHHotLiveCell.m */,
-				181F8D521E616B5E004DB547 /* JHHotLiveCell.xib */,
+				181F8D501E616B5E004DB547 /* JHLiveCell.h */,
+				181F8D511E616B5E004DB547 /* JHLiveCell.m */,
+				181F8D521E616B5E004DB547 /* JHLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -598,7 +598,7 @@
 				18ED588C1E44D3EC00145D2C /* JHNearViewController.xib in Resources */,
 				188788031E0925FE00E600A6 /* LaunchScreen.storyboard in Resources */,
 				18EBA2BA1E438D5900993B91 /* JHMeViewController.xib in Resources */,
-				181F8D541E616B5E004DB547 /* JHHotLiveCell.xib in Resources */,
+				181F8D541E616B5E004DB547 /* JHLiveCell.xib in Resources */,
 				181F8D661E61A0AB004DB547 /* JHVideoViewController.xib in Resources */,
 				181F8D6B1E61A0DB004DB547 /* JHVoiceViewController.xib in Resources */,
 				188788001E0925FE00E600A6 /* Assets.xcassets in Resources */,
@@ -679,7 +679,7 @@
 				18278AD21E50344400199B02 /* HttpTool.m in Sources */,
 				18EBA2AA1E43763000993B91 /* JHTabBar.m in Sources */,
 				181F8D601E61A076004DB547 /* JHTalentViewController.m in Sources */,
-				181F8D531E616B5E004DB547 /* JHHotLiveCell.m in Sources */,
+				181F8D531E616B5E004DB547 /* JHLiveCell.m in Sources */,
 				181F8D4F1E616A1D004DB547 /* JHCreator.m in Sources */,
 				181F8D571E617525004DB547 /* MJExtensionConfig.m in Sources */,
 				181F8D451E61596D004DB547 /* JHHotViewController.m in Sources */,

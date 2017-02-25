@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="664" id="KGk-i7-Jjw" customClass="JHHotLiveCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="664" id="KGk-i7-Jjw" customClass="JHLiveCell">
             <rect key="frame" x="0.0" y="0.0" width="397" height="664"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="397" height="663.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="397" height="663"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31m-qw-b1R" userLabel="TopView">
@@ -105,11 +105,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cityLabel" destination="bSo-M5-5T7" id="Hf0-6R-vNX"/>
-                <outlet property="headImgV" destination="mpt-jV-VTS" id="tfu-yr-TSw"/>
-                <outlet property="nameLabel" destination="JSK-7t-yel" id="m0A-hG-R30"/>
-                <outlet property="onlineLabel" destination="7bn-9E-TMS" id="Z41-vb-HD1"/>
-                <outlet property="portraitImgV" destination="tjX-ix-Tee" id="z5s-wS-1K9"/>
+                <outlet property="cityLabel" destination="bSo-M5-5T7" id="QwQ-Ss-Odi"/>
+                <outlet property="headImgV" destination="mpt-jV-VTS" id="Ty1-lA-L7m"/>
+                <outlet property="nameLabel" destination="JSK-7t-yel" id="FnE-9Y-UeK"/>
+                <outlet property="onlineLabel" destination="7bn-9E-TMS" id="Udj-Le-DYX"/>
+                <outlet property="portraitImgV" destination="tjX-ix-Tee" id="toI-pv-SgH"/>
             </connections>
             <point key="canvasLocation" x="99.5" y="-37"/>
         </tableViewCell>

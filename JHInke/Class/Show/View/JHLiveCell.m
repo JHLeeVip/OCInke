@@ -1,16 +1,16 @@
 //
-//  JHHotLiveCell.m
+//  JHLiveCell.m
 //  JHInke
 //
 //  Created by 佳豪 on 2017/2/25.
 //  Copyright © 2017年 佳豪. All rights reserved.
 //
 
-#import "JHHotLiveCell.h"
+#import "JHLiveCell.h"
 #import "UIImageView+SDWebImage.h"
 #import "JHLive.h"
 
-@interface JHHotLiveCell ()
+@interface JHLiveCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *headImgV;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation JHHotLiveCell
+@implementation JHLiveCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

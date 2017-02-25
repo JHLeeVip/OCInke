@@ -8,7 +8,7 @@
 
 #import "JHHotViewController.h"
 #import "JHLiveHandler.h"
-#import "JHHotLiveCell.h"
+#import "JHLiveCell.h"
 
 @interface JHHotViewController ()
 
@@ -18,7 +18,7 @@
 @end
 
 @implementation JHHotViewController
-static NSString * cellID = @"JHHotLiveCell";
+static NSString * cellID = @"JHLiveCell";
 
 //- (NSArray *)dataArr{
 //    if (!_dataArr) {
@@ -36,7 +36,7 @@ static NSString * cellID = @"JHHotLiveCell";
     [self loadData];
 }
 - (void)initUI{
-    [self.tableView registerNib:[UINib nibWithNibName:@"JHHotLiveCell" bundle:nil] forCellReuseIdentifier:cellID];
+    [self.tableView registerNib:[UINib nibWithNibName:@"JHLiveCell" bundle:nil] forCellReuseIdentifier:cellID];
     //只执行一次,相对于代理方法更加高效
     self.tableView.rowHeight = SCREEN_WIDTH + 8 + 50 + 8 + 8;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -61,7 +61,7 @@ static NSString * cellID = @"JHHotLiveCell";
 #pragma mark =====================================
 #pragma mark -UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JHHotLiveCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    JHLiveCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.live = self.dataArr[indexPath.row];
         
